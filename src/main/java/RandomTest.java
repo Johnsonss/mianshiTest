@@ -2,6 +2,10 @@ import java.time.Clock;
 import java.util.Arrays;
 import java.util.Random;
 
+/**
+ * 这是第一题的答案
+ * 第二题的答案请看文件two.txt
+ */
 public class RandomTest {
 
     public static void main(String[] args) {

@@ -1,0 +1,6 @@
+1.请查看test.sql文件
+2.查询时脱敏：SELECT CONCAT(LEFT(tel,3), '****' ,RIGHT(tel,4)) AS tel FROM employee
+3. SELECT d.name,count(1) as total from employee e join department d on e.departmentId=d.id GROUP BY departmentId
+4. SELECT e.name,max(age),d.name as departmentName from employee e join department d on e.departmentId=d.id GROUP BY d.id
+5. 需要视权限来看用户是否拥有查看敏感数据的权限
+		本次sql针对没有脱敏的手机号操作：select tel from employee WHERE tel like '%%'(不考虑sql优化之类的东西)
